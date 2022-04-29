@@ -1,0 +1,25 @@
+{
+  "name": "odooapi",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node core/index.js",
+    "dev": "nodemon node core/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  }
+}

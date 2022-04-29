@@ -1,0 +1,20 @@
+@url = http://localhost:3000/api/v1/
+
+GET {{url}}cliente
+
+###
+
+GET {{url}}cliente?name=juan&apellido=perez
+
+###
+GET {{url}}producto
+
+###
+
+GET {{url}}producto?name=martillo&precio=15
+###
+GET {{url}}venta
+
+###productocantidad fechacantidad totalventa
+
+GET {{url}}venta?option=totalventa
