@@ -4,14 +4,14 @@ GET {{url}}cliente
 
 ###
 
-GET {{url}}cliente?name=juan&apellido=perez
+GET {{url}}cliente?option=4
 
 ###
 GET {{url}}producto
 
 ###
 
-GET {{url}}producto?name=martillo&precio=15
+GET {{url}}producto?option=proxcatg
 ###
 GET {{url}}venta
 

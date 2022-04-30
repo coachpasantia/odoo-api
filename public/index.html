@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <title>Gilrox-Tablero</title>
+    <style>
+        .arc{
+            fill: #fff;
+            stroke: #000;
+            stroke-width: 1.5px;
+        }
+       
+    </style>
 </head>
 <body>
-    <header>
-        <head>
-            <ul>
-               <li>Gilrox</li>
-               <li>api-tablero</li> 
-            </ul>
-        </head>
-    </header>
-    <main>
-        <button onclick="btnCustomer()">cliente</button>
-        <button id="btnventa">venta</button>
-        <button id="btnproducto">producto</button>
-        <code id="resfetch"></code>
-        <a href="./pages/clientes.html" target="_blank">cliente</a>
-    </main>
-    <script src="./js/index.js"></script>
+    <svg id="pie"></svg>
+    <div id="grafica"></div>
+    <svg id="bar"></svg>
+    <div id="barm"></div>
+    
+    <button onclick="btnCustomer()">presionar</button>
+    <script  src="./js/index.js"></script>
+
 </body>
 </html>

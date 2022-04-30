@@ -9,7 +9,12 @@ export class ProductModel{
         return allProducts;
         //return {"products": "Todos los registros de productos"};
     }
-    query(query){
-        return {"products": "Registros filtrados", "query": query};
+    async query(query){
+        switch(query.option){
+            case '1':
+                const proxcatg = "SELECT pc.name, COUNT(pt.id) FROM product_category pc JOIN product_template pt ON(pc.id = pt.categ_id) GROUP BY pc.name";
+                const allProducts = await this._pool.query(proxcatg);
+                return allProducts.rows;  
+        }
     }
 }

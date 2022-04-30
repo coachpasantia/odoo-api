@@ -3,11 +3,11 @@ export class CustomerController{
         this._model = model;
     }
 
-    getAllCustomers(){
-        return this._model.all();
+    async getAllCustomers(){
+        return await this._model.all();
     }
 
-    getQueryCustomers(query){
-        return this._model.query(query);
+    async getQueryCustomers(query){
+        return await this._model.query(query);
     }
 } 
